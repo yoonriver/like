@@ -1,22 +1,20 @@
 package com.project.like.Entity;
 
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "member")
-@RequiredArgsConstructor
 @Getter
 public class MemberEntity {
 
     @Id
     @GeneratedValue
+    @Column(name = "MEMBER_ID")
     private Long id;
 
-    private String memberId;
+
+
+
 }
