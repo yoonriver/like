@@ -21,5 +21,8 @@ public class LikeEntity {
     @JoinColumn(name = "MEMBER_ID")
     private MemberEntity member;
 
-    private int like_val;
+    @ManyToOne
+    @JoinColumn(name = "NOTICE_ID")
+    private NoticeEntity notice;
+
 }
